@@ -7,7 +7,19 @@ var Item = new Schema({
     type: String
   },
   price: {
-    type: Number
+    type: String
+  },
+  notes: {
+    type: String
+  },
+  date: {
+    type: String
+  },
+  lifetime: {
+    type: String
+  },
+  contractor: {
+    type: String
   }
 },{
 	collection: 'items'

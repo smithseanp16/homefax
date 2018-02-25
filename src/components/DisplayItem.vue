@@ -1,65 +1,46 @@
 <template>
     <div>
-        <h1>Items</h1>
-
         <div class="row">
-          <div class="col-md-10"></div>
-          <div class="col-md-2">
-            <router-link :to="{ name: 'CreateItem' }" class="btn btn-primary">Create Item</router-link>
-          </div>
-        </div><br />
-
-        <table class="table table-hover">
-            <thead>
-            <tr>
-                <td>ID</td>
-                <td>Item Name</td>
-                <td>Item Price</td>
-                <td>Actions</td>
-            </tr>
-            </thead>
-
-            <tbody>
-                <tr v-for="item in items">
-                    <td>{{ item._id }}</td>
-                    <td>{{ item.name }}</td>
-                    <td>{{ item.price }}</td>
-                    <td><router-link :to="{name: 'EditItem', params: { id: item._id }}" class="btn btn-primary">Edit</router-link></td>
-                    <td><button class="btn btn-danger" v-on:click="deleteItem(item._id)">Delete</button></td>
-                </tr>
-            </tbody>
-        </table>
+            <div class="col-md-7">
+                <div class="row">
+                    <div class="col-md-8">
+                    </div>
+                    <div class="col-md-4">
+                        <br>  
+                        <router-link :to="{ name: 'HomeDetails' }" class="btn btn-primary">Explore the details of this home</router-link>
+                    </div>
+                </div>
+                    <div class="row">
+                    <br>
+                    <iframe
+                        width="100%"
+                        height="400"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBSGCyImjskFsIjfikn-UYVsXFeB09DAO0
+                        &q=25,Oakland,Street,Newton,MA">
+                    </iframe>
+                </div>
+            </div>
+            <div class="col-md-1">
+            </div>
+            <div class="col-md-4">
+                <br><br>
+                <h4 style="text-align:center">HomeFax is a trusted information source to professionals and homeowners</h4>
+                <br>
+                <p>Users can use to view and record investments made to your home and view investments made by homeowners to evaluate a property.</p>
+                <br>
+                <p><b>SELLERS</b> are able to use their investment histry clearly communicate the value and improvements made to their home.</p>
+                <p><b>BUYERS</b> are able to accurate estimate improvements and maintenace for their potential property with a history of investment (or under investment) in a property.</p>
+                <p><b>REAL ESTATE PROFESSIONALS</b> can dutifully inform their clients of property history, leverage HomeFax's properietary data sets to bolster sales stratgies and develop a new channel to continue work on a property.</p>
+            </div>
+        </div>
     </div>
 </template>
+<style>
+ div {background-color: lightgray;} 
 
+</style>
 <script>
-
     export default {
-        data(){
-            return{
-                items: []
-            }
-        },
-
-        created: function()
-        {
-            this.fetchItems();
-        },
-
-        methods: {
-            fetchItems()
-            {
-              let uri = 'http://localhost:4000/items';
-              this.axios.get(uri).then((response) => {
-                  this.items = response.data;
-              });
-            },
-            deleteItem(id)
-            {
-              let uri = 'http://localhost:4000/items/delete/'+id;
-              this.items.splice(id, 1);
-              this.axios.get(uri);
-            }
-        }
     }
 </script>

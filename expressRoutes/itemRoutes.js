@@ -45,6 +45,10 @@ itemRoutes.route('/update/:id').post(function (req, res) {
     else {
       item.name = req.body.name;
       item.price = req.body.price;
+      item.notes = req.body.notes;
+      item.date = req.body.date;
+      item.lifetime = req.body.lifetime;
+      item.contractor = req.body.contractor;
 
       item.save().then(item => {
           res.json('Update complete');
