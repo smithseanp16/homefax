@@ -7,10 +7,13 @@ import VueAxios from 'vue-axios';
 import axios from 'axios';
 Vue.use(VueAxios, axios);
 
-import App from './App.vue';
-import CreateItem from './components/CreateItem.vue';
-import DisplayItem from './components/DisplayItem.vue';
-import EditItem from './components/EditItem.vue';
+import App from './home.vue';
+import CreateItem from '../components/CreateItem.vue';
+import DisplayItem from '../components/DisplayItem.vue';
+import EditItem from '../components/EditItem.vue';
+import RegisterLogin from '../register-login/register-login.vue';
+import HomeDetails from '../home-details/home-details.vue';
+
 
 const routes = [
   {
@@ -27,6 +30,16 @@ const routes = [
             name: 'EditItem',
             path: '/edit/:id',
             component: EditItem
+        },
+        {
+            name: 'RegisterLogin',
+            path: '/register-login',
+            component: RegisterLogin
+        },
+        {
+            name: 'HomeDetails',
+            path: '/home-details',
+            component: HomeDetails
         }
 ];
 

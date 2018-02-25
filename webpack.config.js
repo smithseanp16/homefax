@@ -1,6 +1,6 @@
 module.exports = {
   // This is the "main" file which should include all other modules
-  entry: './src/main.js',
+  entry: './src/home/home.js',
   // Where should the compiled file go?
   output: {
     filename: 'bundle.js'
@@ -11,8 +11,23 @@ module.exports = {
   }
 },
   module: {
+    rules: [
+      {
+        test: /\.(png|jpg|gif)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {}  
+          }
+        ]
+      }
+    ],
     // Special compilation rules
     loaders: [
+      {
+        test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
+        loader: 'url-loader?limit=100000'
+      },
       {
         // Ask webpack to check: If this file ends with .js, then apply some transforms
         test: /\.js$/,
