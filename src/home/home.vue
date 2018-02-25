@@ -1,11 +1,11 @@
 <template>
     <div class="container">
         <div class="row" style="border-bottom: 5px solid black;">
-          <div class="col-md-6">
-            <h1 style="text-align:left;float:left;"> <span style="font-family:Script">Home </span><span style="font-family:Courier; font-size:70%;"> FAX</span> </h1>
-            <br><h4  style="text-align:right;float:right;color:gray;vertical-align: text-bottom;">The CarFax for your home</h4>
+          <div class="col-md-5">
+            <h1 style="text-align:left;float:left;"> <span style="font-family:Script; font-size:150%;">Home </span><span style="font-family:Courier; font-size:70%;"> FAX</span> </h1>
+            <br><br><h4  style="text-align:right;float:right;color:gray;vertical-align: text-bottom;">The CarFax for your home</h4>
           </div>
-          <div class="col-md-4">
+          <div class="col-md-5">
             </div>
           <div class="col-md-2">
             <br><!-- </br> -->
