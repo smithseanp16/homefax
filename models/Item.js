@@ -8,6 +8,18 @@ var Item = new Schema({
   },
   price: {
     type: Number
+  },
+  notes: {
+    type: String
+  },
+  date: {
+    type: String
+  },
+  lifetime: {
+    type: Number
+  },
+  contractor: {
+    type: String
   }
 },{
 	collection: 'items'

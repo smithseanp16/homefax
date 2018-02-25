@@ -8,15 +8,35 @@
 
         <form v-on:submit.prevent="updateItem">
             <div class="form-group">
-                <label>Item Name</label>
+                <label>Investment</label>
                 <input type="text" class="form-control" v-model="item.name">
             </div>
 
             <div class="form-group">
-                <label name="product_price">Item Price</label>
+                <label name="product_price">Cost</label>
                 <input type="text" class="form-control" v-model="item.price">
             </div>
 
+            <div class="form-group">
+              <label>Notes (model info, serial number, etc.)</label>
+              <input type="text" class="form-control" v-model="item.notes">
+            </div>
+
+            <div class="form-group">
+              <label>Date of Work</label>
+              <input type="text" class="form-control" v-model="item.date">
+            </div>
+
+            <div class="form-group">
+              <label>Lifetime or Warranty Period (if applicable)</label>
+              <input type="text" class="form-control" v-model="item.lifetime">
+            </div>
+            
+            <div class="form-group">
+              <label>Contractor (if applicable)</label>
+              <input type="text" class="form-control" v-model="item.contractor">
+            </div>
+            
             <div class="form-group">
                 <button class="btn btn-primary">Update</button>
             </div>

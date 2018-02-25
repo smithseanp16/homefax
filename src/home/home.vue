@@ -2,13 +2,12 @@
     <div class="container">
         <div class="row">
           <div class="col-md-10">
-            <h1>HomeFax </h1>
-            <h3>CarFax for your home</h3>
+            <h1 style="text-align:left;float:left;">HomeFax </h1>
+            <h3  style="text-align:right;float:right;color:gray;">CarFax for your home</h3>
           </div>
           <div class="col-md-2">
-            <br></br>
+            <br><!-- </br> -->
             <router-link :to="{ name: 'RegisterLogin' }" class="btn btn-primary">Register / Login</router-link>
-            <!-- <router-link :to="{ name: 'HomeDetails' }" class="btn btn-primary">Home Details</router-link> -->
           </div>
         </div>
         <div class="row">
@@ -31,7 +30,6 @@
 </style>
 
 <script>
-
     export default{
     }
 </script>
