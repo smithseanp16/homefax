@@ -24,7 +24,7 @@
             <div class="col-md-1">
             </div>
             <div class="col-md-4">
-                <br><br>
+                <br><br><br>
                 <h4 style="text-align:center">HomeFax is a trusted information source to professionals and homeowners</h4>
                 <br>
                 <p>Users can use to view and record investments made to your home and view investments made by homeowners to evaluate a property.</p>
