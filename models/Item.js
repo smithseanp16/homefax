@@ -7,7 +7,7 @@ var Item = new Schema({
     type: String
   },
   price: {
-    type: Number
+    type: String
   },
   notes: {
     type: String
@@ -16,7 +16,7 @@ var Item = new Schema({
     type: String
   },
   lifetime: {
-    type: Number
+    type: String
   },
   contractor: {
     type: String

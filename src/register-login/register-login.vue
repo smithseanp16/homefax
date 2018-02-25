@@ -1,89 +1,57 @@
 <template>
     <div>
- <div class="form">
-      
-      <ul class="tab-group">
-        <li class="tab active"><a href="#signup">Sign Up</a></li>
-        <li class="tab"><a href="#login">Log In</a></li>
-      </ul>
-      
-      <div class="tab-content">
-        <div id="signup">   
-          <h1>Sign Up for Free</h1>
-          
-          <form action="/" method="post">
-          
-          <div class="top-row">
-            <div class="field-wrap">
-              <label>
-                First Name<span class="req">*</span>
-              </label>
-              <input type="text" required autocomplete="off" />
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Sign Up for Free</h3>       
+          <form action="/">
+            <div class="top-row">
+            <div class="form-group">
+                <label> First Name<span class="req">*</span> </label><br>
+                    <input type="text" autocomplete="off" />
+              </div>
+            <div class="form-group">
+                <label>Last Name<span class="req">*</span></label><br>
+                <input type="text" autocomplete="off"/>
+              </div>
             </div>
-        
-            <div class="field-wrap">
-              <label>
-                Last Name<span class="req">*</span>
-              </label>
-              <input type="text" required autocomplete="off"/>
+            <div class="form-group">
+              <label>Email Address<span class="req">*</span></label><br>
+              <input type="text" autocomplete="off"/>
             </div>
-          </div>
-
-          <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email" required autocomplete="off"/>
-          </div>
-          
-          <div class="field-wrap">
-            <label>
-              Set A Password<span class="req">*</span>
-            </label>
-            <input type="password" required autocomplete="off"/>
-          </div>
-          
-          <button type="submit" class="button button-block"/>Register!</button>
-          
+            <div class="form-group">
+              <label>Create Password<span class="req">*</span></label><br>
+              <input type="password" autocomplete="off"/>
+            </div>
+            <div class="form-group">
+              <label>Confirm Password<span class="req">*</span></label><br>
+              <input type="password" autocomplete="off"/>
+            </div>
+            <button class="btn btn-primary">Register!</button>
+            <button class="btn btn-primary">Register with LinkedIn!</button>
           </form>
-
-        </div>
-        
-        <div id="login">   
-          <h1>Welcome Back!</h1>
-          
-          <form action="/" method="post">
-          
-            <div class="field-wrap">
-            <label>
-              Email Address<span class="req">*</span>
-            </label>
-            <input type="email" required autocomplete="off"/>
+          </div>     
+          <div class="col-md-6">
+            <h3>Welcome Back!</h3>
+            <form action="/">
+            <div class="form-group">
+                <label>Email Address<span class="req">*</span></label><br>
+                <input type="text" autocomplete="off"/>
+              </div>       
+            <div class="form-group">
+                <label>Password<span class="req">*</span></label><br>
+                <input type="password" autocomplete="off"/>
+              </div>
+              <p class="forgot"><a href="#">Forgot Password?</a></p>
+              <button class="btn btn-primary">Submit</button>
+              <button class="btn btn-primary">Login with LinkedIn</button>
+            </form>          
           </div>
-          
-          <div class="field-wrap">
-            <label>
-              Password<span class="req">*</span>
-            </label>
-            <input type="password" required autocomplete="off"/>
-          </div>
-          
-          <p class="forgot"><a href="#">Forgot Password?</a></p>
-          
-          <button class="button button-block"/>Submit</button>
-          
-          </form>
-
         </div>
-        
-      </div><!-- tab-content -->
-      
-</div> <!-- /form -->
-    </div>
+      </div>
 </template>
 
 <style>
-
+ div {background-color: lightgray;} 
 
 </style>
 

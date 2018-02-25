@@ -43,7 +43,10 @@
         </form>
     </div>
 </template>
+<style>
+ div {background-color: lightgray;} 
 
+</style>
 <script>
 
     export default{

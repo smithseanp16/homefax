@@ -2,28 +2,42 @@
     <div>
         <div class="row">
             <div class="col-xs-6">
-            <br>
-            <h2>Home Information</h2>
-            <table width="50%" class="table">
-                <tbody>
-                    <tr>
-                        <td style="border:none;">Address</td>
-                        <td style="border:none;">25 Oakland Street Newton, MA 02458</td>
-                    </tr>
-                    <tr>
-                        <td style="border:none;">Last Sale Price</td>
-                        <td style="border:none;">$550,000 USD</td>
-                    </tr>
-                    <tr>
-                        <td style="border:none;">Last Sale Date</td>
-                        <td style="border:none;">May 23, 2004</td>
-                    </tr>
-                    <tr>
-                        <td style="border:none;">Previous Year Tax Assessment</td>
-                        <td style="border:none;">570,000 USD</td>
-                    </tr>
-                </tbody>
-            </table>
+                <br>
+                <h2>Home Information</h2>
+                <table class="table">
+                    <tbody>
+                        <tr>
+                            <td style="border:none;"><b>Address</b></td>
+                            <td style="border:none;">25 Oakland Street Newton, MA 02458</td>
+                        </tr>
+                        <tr>
+                            <td style="border:none;"><b>Last Sale Price</b></td>
+                            <td style="border:none;">$550,000 USD</td>
+                        </tr>
+                        <tr>
+                            <td style="border:none;"><b>Last Sale Date</b></td>
+                            <td style="border:none;">May 23, 2004</td>
+                        </tr>
+                        <tr>
+                            <td style="border:none;"><b>Previous Year Tax Assessment</b></td>
+                            <td style="border:none;">570,000 USD</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="col-xs-1">
+            </div>
+            <div class="col-xs-5">
+                <div class="row">
+                    <br><br><br>
+                    <iframe
+                        width="400"
+                        height="200"
+                        frameborder="0" style="border:0"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBSGCyImjskFsIjfikn-UYVsXFeB09DAO0
+                        &q=25,Oakland,Street,Newton,MA">
+                    </iframe>
+                </div>
             </div>
         </div>
         <div class="row">
@@ -33,14 +47,14 @@
                     <thead>
                         <tr>
                             <!-- <td>ID</td> -->
-                            <td>Investment</td>
-                            <td>Cost</td>
-                            <td>Notes</td>
-                            <td>Date</td>
-                            <td>Lifetime or Warranty Period</td>
-                            <td>Contractor</td>
-                            <td>Validated</td>
-                            <td>Actions</td>
+                            <td><b>Investment</b></td>
+                            <td><b>Cost</b></td>
+                            <td><b>Notes</b></td>
+                            <td><b>Date</b></td>
+                            <td><b>Lifetime or Warranty Period</b></td>
+                            <td><b>Contractor</b></td>
+                            <td><b>Validated</b></td>
+                            <td><b>Actions</b></td>
                         </tr>
                     </thead>
                     <tbody>
